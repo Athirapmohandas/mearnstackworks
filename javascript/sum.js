@@ -1,7 +1,7 @@
-var limit=10;
+var limit=4;
 var i=1;
 sum=0;
-while(i<=10)
+while(i<=limit)
 {
    sum=sum+i;
    i++;
