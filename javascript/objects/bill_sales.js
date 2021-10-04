@@ -24,11 +24,9 @@ for(let bill of bill_details){
     }
 }
 console.log(sales_report);
-var sales_report_array=[];
-sales_report_array.push(sales_report);
 //console.log(sales_report_array);
 
 //sort the sales_report wrt totalcollection desc.
- sales_report_array.sort((sum1,sum2)=>sum2-sum1)
- console.log(sales_report_array);
+ 
 // console.log(sales_report);
+console.log(Object.entries(sales_report).sort((bill1,bill2)=>bill2[1]-bill1[1]));

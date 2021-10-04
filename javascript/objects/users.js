@@ -234,3 +234,4 @@ var users=[
   //print user name and email id
 
   users.forEach(user=>console.log("Username:",user.name,"\tEmail:", user.email))
+  users.forEach(user=>console.log("zipcode:",user.address.zipcode,"\tlat:", user.address.geo.lat,"\tlng:",user.address.geo.lng))
