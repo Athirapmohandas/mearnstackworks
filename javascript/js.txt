@@ -1,0 +1,5 @@
+//Using node we can run in backend. 
+//firstly used in frontend.
+//.js=>machine code(done by javascript engine eg:spidermonkey,chakra,v8 standards:ECMA)
+//this =>indicates Instance variables of current class. (python =>self)
+//name,age,gender =>local var

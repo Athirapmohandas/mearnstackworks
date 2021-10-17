@@ -1232,7 +1232,6 @@ for (let user of todo) {
     }
     obj1[user_id] = obj2;
 }
-
 console.log(obj1);
     // //{
     //     1:{total:10,finished:10,pending:10}
