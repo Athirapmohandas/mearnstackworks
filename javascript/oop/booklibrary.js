@@ -20,11 +20,11 @@ findBook(b_name){
 filterBook(){
     //sort based on copies_sold
     var books_arr=[];
-    books_arr.push(this.books);
-    //console.log(books_arr);
-
-    // books_arr.sort((book1,book2)=>book1.copies_sold-book2.copies_sold)
-    // console.log(books_arr);
+    for(let book in this.books){
+    books_arr.push(this.books[book]);
+    }
+    books_arr.sort((book1,book2)=>book1.copies_sold-book2.copies_sold)
+    console.log(books_arr);
 
 }
 
