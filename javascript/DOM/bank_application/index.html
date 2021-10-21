@@ -12,20 +12,22 @@
 </head>
 
 <body>
+    
     <div class="container w-50">
+        <div id="result"></div>
         <h1 class="text-center">Registration Form</h1>
         <form action="" class="border border-danger" style="background-color: azure;">
             <div class="mb-2 p-4">
                 <label for="">First name</label>
-                <input type="text" class="form-control">
+                <input type="text" id="fname" class="form-control" >
             </div>
             <div class="mb-1 p-4">
                 <label for="">Account number</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="accno">
             </div>
             <div class="mb-1 p-4">
                 <label for="">Password</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="pwd">
             </div>
             <div class="mb-1 p-4">
                 <label for="">Confirm Password</label>
@@ -35,13 +37,12 @@
 
 
             <div class="mb-2 p-5">
-                <button class="btn-primary">REGISTER</button>
+                <button class="btn-primary" onclick="bank.createAccount()">CREATE ACCOUNT</button>
             </div>
-
-
+ 
         </form>
-
+        
     </div>
 </body>
-
+<script src="./script.js"></script>
 </html>
