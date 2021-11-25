@@ -1,0 +1,22 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="container w-50">
+        <b>{{aim}}</b>
+        <h1 class="text-center fs-2">Log In</h1>
+        <div class="mb-4 mt-3 p-2">
+            <label for="" >Account Number</label>
+            <!-- <input type="text" (change)=acnoChange($event) [value]="msg" class="form-control"  id="acno"> -->
+            <input type="text" (change)=acnoChange($event) [value]="msg" name="accno" formControlName="accno" class="form-control"  id="acno">
+        </div>
+        <div class="mb-4 p-2"> 
+            <label for="" >Password</label>
+            <input type="password" (change)=pswdChange($event) name="pswd" formControlName="pswd" class="form-control" id="password">
+        </div>
+        <div class="mb-4 p-2">
+            <button class=" me-5 btn-primary" type="submit">LogIn</button>
+        </div>
+        <div class="mb-4 p-2">
+            <a routerLink="register">New user Registration</a>
+        </div>
+
+</div>
+</form>

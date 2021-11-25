@@ -1,0 +1,54 @@
+<div class="box1">
+<form (ngSubmit)="deposit()" >
+    <div class="container w-50">
+        <h1 class="text-center fs-2">Deposit Form</h1>
+        <div class="mb-4  p-2">
+            <label for="">To Account Number</label>
+            <!-- <input type="text" (change)=acnoChange($event) [value]="msg" class="form-control"  id="acno"> -->
+            <input type="text" name="accno" [(ngModel)]="accno" class="form-control" id="acno">
+        </div>
+        <div class="mb-4 p-2">
+            <label for="">Amount</label>
+            <!-- <input type="text" (change)=acnoChange($event) [value]="msg" class="form-control"  id="acno"> -->
+            <input type="text" name="amt" [(ngModel)]="amt" class="form-control" id="amt">
+        </div>
+        <div class="mb-4 p-2">
+            <label for="">Password</label>
+            <input type="password" name="pswd" [(ngModel)]="pswd" class="form-control" id="password">
+        </div>
+        <div class="mb-4 p-2">
+            <button class=" me-5 btn-primary" type="submit">Submit</button>
+        </div>
+
+
+    </div>
+
+</form>
+</div>
+<div class="box2">
+<form (ngSubmit)="withdraw()">
+    <div class="container w-50">
+
+        <h1 class="text-center fs-2">Withdrawal Form</h1>
+        <div class="mb-4  p-2">
+            <label for="">Account Number</label>
+            <!-- <input type="text" (change)=acnoChange($event) [value]="msg" class="form-control"  id="acno"> -->
+            <input type="text" name="accno1" [(ngModel)]="accno1" class="form-control" id="acno">
+        </div>
+        <div class="mb-4 mt-3 p-2">
+            <label for="">Amount</label>
+            <!-- <input type="text" (change)=acnoChange($event) [value]="msg" class="form-control"  id="acno"> -->
+            <input type="text" name="amount1" [(ngModel)]="amt1" class="form-control" id="amount">
+        </div>
+        <div class="mb-4 ">
+            <label for="">Password</label>
+            <input type="password" name="pswd1" [(ngModel)]="pswd1" class="form-control" id="password">
+        </div>
+        <div class="mb-4 p-2">
+            <button class=" me-5 btn-primary" type="submit">Submit</button>
+        </div>
+
+
+    </div>
+</form>
+</div>

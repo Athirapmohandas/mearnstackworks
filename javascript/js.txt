@@ -3,3 +3,34 @@
 //.js=>machine code(done by javascript engine eg:spidermonkey,chakra,v8 standards:ECMA)
 //this =>indicates Instance variables of current class. (python =>self)
 //name,age,gender =>local var
+
+
+js is single threaded, synchronous(same order)
+javascript run time environment =>engine& web api
+js engine=> call stack,memory heap
+
+DOM,setTimeOut(),fetch,setTimeInterval(),promise,onClick(),AJAX=>didnt push in call stack, instead goes to web api...
+		setTimeOut() function insert into call back queue when time period is completed.
+eventloop monitors if call stack is empty, Once empty,items in callbackqueue() will work.
+
+promise==>fullfil,pending,reject
+
+API=>serves data
+http methods=>get,post,put,patch(only updation entry),delete
+http methods is used for backend dfrnt pgm & front end dfrnt pgm
+get=> A request through url to server. Here we only get data 
+post=> is used for database storing.Any data can be stored in serverside DB.
+put=>updation of data. Here we must give all details
+patch=> Also updation. But only give updated data
+
+status code==
+100-199 =>informational
+200-299 =>success
+300-399=> redirectonal
+400-499=>client side error
+500-599=>sever error
+
+promise=container for future values.
+exexution environment=>this& global
+global.console.log=>servwer side
+window.console.log=>client side
